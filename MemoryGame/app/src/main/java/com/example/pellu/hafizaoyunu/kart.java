@@ -56,7 +56,7 @@ public class kart extends Button {
 
         if (cevrilebilir) {
             if (!acikMi) {
-                // arkasi cevriliyse
+               
                 setBackground(on);
                 acikMi = true;
             } else {

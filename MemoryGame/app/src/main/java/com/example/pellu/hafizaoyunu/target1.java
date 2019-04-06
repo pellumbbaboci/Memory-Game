@@ -49,7 +49,7 @@ public class target1 extends AppCompatActivity {
                         final kart k2 = (kart) findViewById(sonKart[0]);
                         if (k2.onPlanID == k.onPlanID && k2.getId() != k.getId()) {
 
-                            //eslestiler ...
+                            //Matched 
                             k.cevrilebilir = false;
                             k2.cevrilebilir = false;
 
@@ -64,7 +64,7 @@ public class target1 extends AppCompatActivity {
                                 }
                             }
                         } else {
-                            // eslesmediler geri cevir 2 karti
+                            // they didnt matched turn back both 
                             Handler h = new Handler();
                             h.postDelayed(new Runnable() {
                                 @Override
@@ -81,7 +81,7 @@ public class target1 extends AppCompatActivity {
                 }
             });
         }
-        // kartlari karistir
+        // mix the cards
         for (int j = 0; j < 12; j++) {
             int random = (int) (Math.random() * 12);
             kart k = kartlar[random];
